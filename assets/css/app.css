@@ -1,0 +1,42 @@
+*,html,body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #eeeeee;
+}
+
+.grid{
+    display: grid;
+}
+
+.column-gap\:16px{
+    column-gap:16px;
+}
+
+.container{
+    max-width: 1024px;
+}
+
+.mx-auto{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mt-16px{
+    margin-top: 16px;
+}
+
+header#header,
+aside#sidebar,
+main#main{
+    background: #ffffff;
+    padding: 16px;
+}
+
+.grid-template-columns\:1-4{
+    grid-template-columns: 20% 80%;
+}
