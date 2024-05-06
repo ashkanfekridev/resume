@@ -1,0 +1,244 @@
+:root {
+    --color-1: #2E2E48;
+    --color-2: #47516B;
+    --color-3: #79819A;
+
+}
+
+
+@font-face {
+    font-family: dana;
+    src: url(../fonts/dana/dana-black.eot);
+    src: url(../fonts/dana/dana-black.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/dana/dana-black.woff) format("woff"),
+    url(../fonts/dana/dana-black.woff2) format("woff2"),
+    url(../fonts/dana/dana-black.ttf) format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: dana;
+    src: url(../fonts/dana/dana-bold.eot);
+    src: url(../fonts/dana/dana-bold.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/dana/dana-bold.woff) format("woff"),
+    url(../fonts/dana/dana-bold.woff2) format("woff2"),
+    url(../fonts/dana/dana-bold.ttf) format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: dana;
+    src: url(../fonts/dana/dana-medium.eot);
+    src: url(../fonts/dana/dana-medium.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/dana/dana-medium.woff) format("woff"),
+    url(../fonts/dana/dana-medium.woff2) format("woff2"),
+    url(../fonts/dana/dana-medium.ttf) format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: dana;
+    src: url(../fonts/dana/dana-regular.eot);
+    src: url(../fonts/dana/dana-regular.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/dana/dana-regular.woff) format("woff"),
+    url(../fonts/dana/dana-regular.woff2) format("woff2"),
+    url(../fonts/dana/dana-regular.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: dana;
+    src: url(../fonts/dana/dana-light.eot);
+    src: url(../fonts/dana/dana-light.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/dana/dana-light.woff) format("woff"),
+    url(../fonts/dana/dana-light.woff2) format("woff2"),
+    url(../fonts/dana/dana-light.ttf) format("truetype");
+    font-weight: 200;
+}
+
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "dana", sans-serif;
+}
+
+body {
+    direction: rtl;
+}
+
+h1{
+    font-size: 26px;
+    font-weight: 900;
+}
+
+
+#aside {
+    width: 320px;
+    padding: 24px;
+}
+
+#resume-aside-avatar {
+    border-radius: 100%;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+#resume-aside-name {
+    color: var(--color-3);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#resume-aside-skill {
+    font-size: 18px;
+    font-weight: 500;
+    background: linear-gradient(#A478E8, #516CF7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.list-with-icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+}
+
+.list-with-icon>.icon{
+    background: #E2E6EE;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 6px;
+    margin-left: 8px;
+}
+.list-with-icon>.icon>svg{
+    width: 100%;
+    height: 100%;
+}
+.list-with-icon>.content>.title{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.list-with-icon>.content>.text{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+main#main{
+    padding: 24px;
+    min-width: 100%;
+}
+
+
+.main-item-title{
+    color: #2E2E48;
+}
+
+
+
+
+
+.main-item-box.first{
+    border-radius: 8px 8px 0 0;
+}
+.main-item-box.last{
+    border-radius:0 0 8px 8px;
+}
+
+.main-item-box{
+    background: #F7F9FC;
+    padding: 12px 24px;
+    margin-bottom: 12px;
+}
+
+
+.item-content{
+    grid-template-columns: 50% 50%;
+    gap: 4px 0;
+    align-items: center;
+    justify-items: stretch;
+}
+
+
+.subtitle{
+    color: #79819A;
+}
+
+.date{
+    color: #9251F7;
+    background: #EFE2F9;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.item-content>.title{
+    color: #2E2E48;
+    font-size: 22px;
+    font-weight: 600;
+}
+.item-content>.location{
+    color: #79819A;
+}
+
+
+
+
+
+
+
+.container {
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.mt-36px {
+    margin-top: 36px;
+}
+.mb-16px{
+    margin-bottom: 16px;
+}
+
+.sep-v {
+    display: block;
+    height: 1px;
+    border: none;
+    background: #E2E6EE;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.text-light{
+    color: var(--color-2)
+}
+.text-1{
+    color:var(--color-1);
+}
+
+.dir-ltr{
+    direction: ltr;
+}
+
+.text-left{
+    text-align: left;
+}
